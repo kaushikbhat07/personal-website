@@ -53,7 +53,16 @@
   ======================================================== -->
     </head>
 
-    <body>
+    <body onload="removePreLoader()"> 
+        <!-- onload="removePreLoader()" -->
+        <div id="loader-wrapper">
+            <div id="loader-parent" class="d-flex justify-content-center align-items-center">
+                <div class="loading-icon spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+
         <!-- ======= Mobile nav toggle button ======= -->
         <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 

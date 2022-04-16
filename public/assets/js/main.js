@@ -4,6 +4,12 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
+
+function removePreLoader() {
+    var load = document.getElementById("loader-wrapper");
+    load.style.display = "none";
+}
+
 (function () {
     "use strict";
 
