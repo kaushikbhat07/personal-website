@@ -210,11 +210,15 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+    position: relative;
     width: 100%;
-    height: 100vh;
-    background: url("../img/personal/iloveimg-compressed/IMG_20220403_111457-min.jpg")
-        center center;
+    height: auto;
+    background-image: url("../img/personal/iloveimg-compressed/IMG_20220403_111457-min_bak.jpg");
+    background-attachment: scroll;
     background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 #hero:before {
     content: "";
@@ -253,11 +257,27 @@ h6 {
 @media (min-width: 1024px) {
     #hero {
         background-attachment: fixed;
+        background-size: cover;
     }
+}
+@media (min-width: 768px) {
+    #hero {
+        height: 100vh;
+    }
+    /* #hero:before {
+        content: "";
+        background: rgba(5, 13, 24, 0.3);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    } */
 }
 @media (max-width: 768px) {
     #hero h1 {
-        font-size: 28px;
+        font-size: 35px;
         line-height: 36px;
     }
     #hero h2 {
