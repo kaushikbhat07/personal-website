@@ -212,12 +212,12 @@ h6 {
 #hero {
     position: relative;
     width: 100%;
-    height: auto;
-    background-image: url("../img/personal/iloveimg-compressed/IMG_20220403_111457-min_bak.jpg");
-    background-attachment: scroll;
-    background-size: cover;
-    background-origin: border-box;
+    height: 100vh;
+    background-image: url("../img/personal/iloveimg-compressed/IMG_20220403_111501-min-phone.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: border-box;
     background-position: center center;
 }
 #hero:before {
@@ -254,26 +254,29 @@ h6 {
     letter-spacing: 1px;
     border-bottom: 3px solid #149ddd;
 }
-@media (min-width: 1024px) {
+@media (min-width: 576px) {
     #hero {
-        background-attachment: fixed;
+        height: 100vh;
+
+        background: url("../img/personal/iloveimg-compressed/IMG_20220403_111501-min-tablet.jpg")
+            center center;
+        background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: scroll;
+        background-origin: border-box;
     }
 }
 @media (min-width: 768px) {
     #hero {
         height: 100vh;
+
+        background: url("../img/personal/iloveimg-compressed/IMG_20220403_111457-min_bak.jpg")
+            center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: border-box;
     }
-    /* #hero:before {
-        content: "";
-        background: rgba(5, 13, 24, 0.3);
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-    } */
 }
 @media (max-width: 768px) {
     #hero h1 {
@@ -284,6 +287,12 @@ h6 {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+        background-size: cover;
     }
 }
 
